@@ -25,6 +25,7 @@ ul{
     margin: 0 auto;
 }
 .header{
+    width: 100%;
     position: fixed;
     padding: 40px 0;
 }
@@ -49,6 +50,9 @@ ul{
    align-items: center;
 
 }
+.search-form{
+    display: flex;
+}
 .search-form form {
     display: flex;
      border: 2px solid #E7E6EF;
@@ -69,4 +73,52 @@ ul{
 }
 .list a:hover{
 color: var(--primarycolor);
+}
+.icon{
+    display: none;
+}
+
+@media screen and (max-width :1360px) and (min-width:1156px) {
+.header .containar{
+ 
+   gap:100px;
+  
+}
+.right{
+    gap: 40px;
+}
+
+}
+@media screen and (max-width :1157px) and (min-width:700px){
+
+  .list ul,.search-form form{
+    display: none;
+  }
+  .icon{
+    display: block;
+    font-size: 28px;
+  }
+}
+@media screen and (max-width :701px) and (min-width:300px){
+    .list ul,.search-form form{
+    display: none;
+  }
+  .icon{
+    display: block;
+    font-size: 28px;
+  }
+  .header{
+    width: 100%;
+  }
+  .header .containar{
+ 
+   gap:10px;
+  display: flex;
+  flex-wrap: wrap;
+ text-align: center;
+ justify-content: center;
+ align-items: center;
+ padding:0 46px;
+}
+
 }
