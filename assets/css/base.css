@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+ --primarycolor:#FB2E86;
+}
+.container{
+    width: 100%;
+    padding: 0 200px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:70px;
+}
+ul{
+   list-style-type: none;   
+}
+
+a{
+    text-decoration: none;
+    
+}
+.btn{
+    
+    border: 0;
+    padding: 10px;
+    background-color: var(--primarycolor);
+   
+
+}

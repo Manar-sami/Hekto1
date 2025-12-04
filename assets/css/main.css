@@ -1,33 +1,8 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-:root{
- --primarycolor:#FB2E86;
-}
-body{
-    height: 7000px;
-}
-
-a{
-    text-decoration: none;
-    color: #0D0E43;
-}
-ul{
-   list-style-type: none;   
-}
-.containar{
-    width: 100%;
-    padding: 0 300px;
-    max-width: 1400%;
-    margin: 0 auto;
-}
 .header{
     width: 100%;
     position: fixed;
     padding: 40px 0;
+    background-color: white;
 }
 .logo img{
     width: 98px;
@@ -44,7 +19,10 @@ ul{
     gap: 35px;
     
 }
-.header .containar{
+.list ul li a{
+    color: #0D0E43;
+}
+.header .container{
  display: flex;
    gap:230px;
    align-items: center;
@@ -61,13 +39,6 @@ ul{
 .header input{
     border: 0;
 }
-.header button{
-    border: 0;
-    width: 50px;
-    /* height: 40px; */
-    background-color: var(--primarycolor);
-   
-}
 .list a{
     transition: .9s;
 }
@@ -77,6 +48,63 @@ color: var(--primarycolor);
 .icon{
     display: none;
 }
+
+
+/* footer */
+.footer{
+    background-color:#e0e2f3;
+    padding: 100px 0;
+}
+.footer button{
+    border: 0;
+    background-color: var(--primarycolor);
+    color: white;
+    padding: 10px 40px;
+    text-align: center;
+}
+.footer input{
+    padding: 10px;
+    border: 0;
+}
+.email-form form{
+    display: flex;
+}
+.email-form{
+      display: flex;
+     border: 2px solid #E7E6EF;
+    height: 40px;
+}
+
+.footer_left{
+    display: flex;
+    flex-direction: column;
+    gap:27px;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    color: #8A8FB9;
+}
+.footer_right .row{
+    gap:38px;
+}
+.footer_item{
+ display: flex;
+ flex-direction: column;
+ gap: 35px;
+}
+.footer_item ul{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+   
+}
+.footer_item ul li a{
+ color: #8A8FB9;
+}
+
+/*responsive design to header */
 
 @media screen and (max-width :1360px) and (min-width:1156px) {
 .header .containar{
@@ -100,7 +128,9 @@ color: var(--primarycolor);
   }
 }
 @media screen and (max-width :701px) and (min-width:300px){
+  
     .list ul,.search-form form{
+        
     display: none;
   }
   .icon{
@@ -113,12 +143,26 @@ color: var(--primarycolor);
   .header .containar{
  
    gap:10px;
-  display: flex;
+  /* display: flex; */
   flex-wrap: wrap;
  text-align: center;
- justify-content: center;
- align-items: center;
+ 
  padding:0 46px;
 }
 
+}
+/*responsive design to footer*/
+@media screen and (max-width :500px) and (min-width:300px){
+    .footer{
+        width: 100%;
+    }
+    .footer button{
+    
+    padding: 7px;
+  
+}
+   .footer input{
+    padding: 5px;
+   
+}
 }
