@@ -6,6 +6,7 @@
 
 :root{
  --primarycolor:#FB2E86;
+ --font-primary:"Josefin Sans", sans-serif;
 }
 .container{
     width: 100%;
