@@ -127,7 +127,9 @@ color: var(--primarycolor);
     font-size: 18px;
     border: 0;
 }
-
+.Newslater button:hover{
+ background-color: #ce1364;
+}
 
 
 /*responsive design to header */
