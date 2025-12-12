@@ -248,7 +248,7 @@ gap: 7px;
  
     .footer {
 
-    width: 144%;
+    width: 100%;
     padding: 60px 0;
   }
   .footer .row {
@@ -281,7 +281,7 @@ gap: 7px;
 /*responsive design to section */
 @media screen and (min-width:300px) and (max-width :600px){
  .Newslater {
-    width: 144%;
+    width: 100%;
  }
     .Newslater h2{
     font-size: 24px;
