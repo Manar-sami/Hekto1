@@ -9,14 +9,13 @@
  --font-primary:"Josefin Sans", sans-serif;
 }
 .container{
-    width: 100%;
-    padding: 0 200px;
+    width: 80%;
     margin: 0 auto;
 }
 .row{
     display: flex;
     flex-wrap: wrap;
-    gap:70px;
+    justify-content: space-between;
 }
 ul{
    list-style-type: none;   
@@ -28,11 +27,18 @@ a{
 }
 .btn{
     
-    border: 0;
-    padding: 10px;
+   padding: 16px 30px;
+    color: white;
     background-color: var(--primarycolor);
-   
-
+    font-size: 18px;
+    border: 0;
+    font-family: var(--font-primary);
+}
+.btn:hover{
+ background-color: #ce1364;
+}
+.pt-b{
+    padding: 50px 0;
 }
 
 

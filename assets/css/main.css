@@ -24,7 +24,7 @@
 }
 .header .container {
  display: flex;
-   gap:306px;
+   justify-content: space-between;
    align-items: center;
 
 }
@@ -38,6 +38,11 @@
 }
 .header input{
     border: 0;
+}
+.header button{
+       border: 0;
+    padding: 10px;
+    background-color: var(--primarycolor);
 }
 .list a{
     transition: .9s;
@@ -107,7 +112,6 @@ color: var(--primarycolor);
 .Newslater{
     height: 462px;
     background-image: url(./../image/Rectangle\ 102.png);
-    margin:40px 0 ;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -120,16 +124,7 @@ color: var(--primarycolor);
     font-size: 35px;
     color: #151875;
 }
-.Newslater button{
-    padding: 16px 30px;
-    color: white;
-    background-color: var(--primarycolor);
-    font-size: 18px;
-    border: 0;
-}
-.Newslater button:hover{
- background-color: #ce1364;
-}
+
 
 
 
@@ -142,7 +137,6 @@ color: var(--primarycolor);
 }
 .Featured_Products{
     text-align: center;
-    margin: 20px 0;
    
 }
 .Featured_Products h2{
@@ -192,6 +186,41 @@ gap: 7px;
 .code{
     font-family: var(--font-primary);
 }
+
+
+/* hero */
+.hero{
+    background-color: #f2f0ff;
+}
+.hero_left img{
+    width: 500px;
+    height: 500px;
+}
+.hero_right{
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap:25px;
+}
+.hero_right h1{
+    font-size: 50px;
+    font-family: var(--font-primary);
+    font-weight: normal;
+}
+.hero_right  p{
+
+    color: #8A8FB9;
+}
+.hero_right h2{
+    color: var(--primarycolor);
+    font-size: 16px;
+}
+
+
+
+/* responsive */
+
 /*responsive design to header */
 
 @media screen and (min-width:1156px) and (max-width :1360px) {
@@ -205,7 +234,7 @@ gap: 7px;
 }
 
 }
-@media screen and (min-width:700px) and (max-width :1157px){
+@media screen and (min-width:601px) and (max-width :1157px){
 
   .list ul,.search-form form{
     display: none;
@@ -280,6 +309,7 @@ gap: 7px;
 
 /*responsive design to section */
 @media screen and (min-width:300px) and (max-width :600px){
+   
  .Newslater {
     width: 100%;
  }
@@ -330,3 +360,29 @@ gap: 7px;
     height: auto;
   }
 }
+
+/* hero */
+
+@media screen and (min-width:300px) and (max-width :600px){
+    
+    .hero_left img{
+        width: 200px;
+        height: 200px;
+        
+    }
+    
+    .hero_right h1{
+         font-size: 24px;
+    }
+    .hero_right button{
+        padding: 8px 15px;
+    }
+    .hero .row{
+       gap:20px
+    }
+    .hero_right h2{
+        font-size: 10px;
+    }
+}
+
+
