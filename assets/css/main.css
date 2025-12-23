@@ -142,12 +142,59 @@ background-color: white;
     position: absolute;
     width: 110px;
     height: auto;
-    left: 10%;
+    left: 0px;
     opacity: 0;
 }
 .Leatest_details:hover .sale{
     opacity: 1;
 }
+.icon_Leatest{
+   position: absolute;
+   bottom: 20%;
+   left: 10px; 
+   display: flex;
+   flex-direction: column;
+   gap: 20px; 
+   color: #2f1ac4;
+   opacity: 0;
+    
+}
+.Leatest_details:hover  .icon_Leatest{
+     opacity: 1;
+}
+
+/* what */
+.what{
+    text-align: center;
+    width: 100%;
+}
+.what .row{
+    gap:25px;
+}
+.what h2{
+    color: var(--secndcolor);
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+.what_details{
+    padding: 50px 0;
+    width: calc((100% - 75px)/4);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+}
+.what_details h3{
+    color: var(--secndcolor);
+    font-family: var(--font-primary);
+    font-size: 22px;
+}
+.what_details p{
+    color: rgba(26, 11, 91, 0.3);
+    font-size: 16px;
+    font-weight: bold;
+}
+
 /* footer */
 .footer{
     background-color:#e0e2f3;
@@ -555,5 +602,22 @@ gap: 7px;
 }
 .Leatest_info .row{
    justify-content: center;
+}
+}
+
+
+@media screen and (min-width:601px) and (max-width :1156px){
+.what_details{
+    padding: 20px 0;
+    width: calc((100% - 25px)/2);
+    gap: 20px;
+}
+  
+}
+@media (min-width:300px) and (max-width:600px) {
+.what_details{
+    padding: 20px 0;
+    width: 100%;
+    gap: 20px;
 }
 }
