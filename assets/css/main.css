@@ -54,7 +54,100 @@ color: var(--primarycolor);
     display: none;
 }
 
+/* Leatest Products */
+.Leatest_Products{
+    width: 100%;
+    text-align: center;
+}
+.Leatest_Products .row{
+    gap:40px;
 
+}
+.Leatest_Products h2{
+    color: var(--secndcolor);
+    font-family: var(--font-primary);
+    font-size: 32px;
+}
+.Leatest_details{
+   width: calc((100% - 80px) / 3);
+
+}
+.products-nav ul{
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
+   gap:50px;
+   padding: 15px 0 40px 0;
+   font-size: 18px;
+   color: var(--secndcolor);
+  
+}
+.products-nav ul a{
+ transition: .7s;
+}
+.products-nav ul a:hover{
+    text-decoration: underline;
+    color: var(--primarycolor);
+
+}
+.Leatest_img{
+    background-color: #F7F7F7;
+    padding: 20px;
+    position: relative;
+}
+
+.Leatest_info{
+    padding: 10px 0;
+    font-family: var(--font-primary);
+}
+.product-price{
+   display: flex;
+   gap: 16px;
+
+}
+.Leatest_info p{
+    color: var(--secndcolor);
+}
+.current_price{
+    color: var(--secndcolor);
+    font-size: 14px;
+}
+.old_price{
+    color: var(--primarycolor);
+    text-decoration: line-through;
+    font-size: 12px;
+}
+.Leatest_info p::after {
+    content: '';
+    width: 155px;
+    height: 3px;
+    background-color: #EEEFFB;
+    display: block;
+    margin-top: 5px;
+}
+.chair{
+    height: 300px;
+    padding: 10px;
+    width: 300px;
+}
+.Leatest_details:hover .Leatest_img .chair {
+border: 2px solid black;
+
+}
+
+.Leatest_details:hover .Leatest_img{
+background-color: white;
+}
+.sale{
+    position: absolute;
+    width: 110px;
+    height: auto;
+    left: 10%;
+    opacity: 0;
+}
+.Leatest_details:hover .sale{
+    opacity: 1;
+}
 /* footer */
 .footer{
     background-color:#e0e2f3;
@@ -117,6 +210,7 @@ color: var(--primarycolor);
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    max-width: 100%;
     gap: 25px;
 }
 .Newslater h2{
@@ -349,57 +443,54 @@ gap: 7px;
 
 
 /*responsive design to section */
-@media screen and (min-width:300px) and (max-width :600px){
-   
- .Newslater {
-    width: 100%;
- }
-    .Newslater h2{
-    font-size: 24px;
- }   
-.Newslater button{
-    padding: 8px 20px;
-   
-    font-size: 14px;
+@media screen and (min-width:1156px) and (max-width :1360px) {
+
+
 }
-}
-
-
-
-
-
-@media screen and (min-width:1156px) and (max-width :1360px){
-    .product-details{
-    width: calc((100% - 60px)/3);
-}
-}
-
-@media screen and (min-width:701px) and (max-width :1157px){
- .product-details{
-    width: calc((100% - 30px)/2);
-}
-}
-@media (max-width: 600px) {
-
-  .Featured_Products .row {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    margin-top: 0;
-  }
-
-  .product-details {
-    /* width: 100%; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+@media screen and (min-width:601px) and (max-width :1157px){
+.Newslater h2{
+    font-size: 28px;
     text-align: center;
-  }
+}
+.Newslater button{
+   padding: 10px 20px; 
+   font-size: 16px; 
+}
+}
+@media (min-width:300px) and (max-width:600px) {
+.Newslater h2{
+    font-size: 25px;
+    text-align: center;
+}
+.Newslater button{
+   padding: 10px 20px; 
+   font-size: 16px; 
+}
+}
 
-  .product-img img {
-    width: 150px;
-    height: auto;
-  }
+
+
+
+
+@media screen and (min-width:1156px) and (max-width :1360px) {
+.product-details{
+    width: calc((100% - 60px)/3);
+     
+}
+
+}
+@media screen and (min-width:601px) and (max-width :1157px){
+.product-details{
+    width: calc((100% - 30px)/ 2);
+     
+}
+
+}
+@media (min-width:300px) and (max-width:600px) {
+.product-details{
+    width: 100%;
+     
+}
 }
 
 /* hero */
@@ -426,4 +517,43 @@ gap: 7px;
     }
 }
 
+/* .Leatest_Products */
 
+@media screen and (min-width:1156px) and (max-width :1360px) {
+.Leatest_details{
+   width: calc((100% - 40px) / 2);
+
+}
+
+}
+@media screen and (min-width:601px) and (max-width :1157px){
+.Leatest_details{
+   width: calc((100% - 40px) / 2);
+   .chair{
+     height: 200px;
+   
+    width: 200px;
+}
+
+}
+  
+}
+@media (min-width:300px) and (max-width:600px) {
+.Leatest_details{
+   width: 100%;
+}
+.chair{
+     height: 150px;
+    padding: 10px;
+    width: 150px;
+}
+.sale{
+    position: absolute;
+    width: 80px;
+   
+    left: 6%;
+}
+.Leatest_info .row{
+   justify-content: center;
+}
+}
