@@ -143,7 +143,7 @@ background-color: white;
     position: absolute;
     width: 110px;
     height: auto;
-    left: 0px;
+    left: 25px;
     opacity: 0;
 }
 .Leatest_details:hover .sale{
@@ -152,7 +152,7 @@ background-color: white;
 .icon_Leatest{
    position: absolute;
    bottom: 20%;
-   left: 10px; 
+   left: 10%; 
    display: flex;
    flex-direction: column;
    gap: 20px; 
@@ -217,9 +217,10 @@ background-color: white;
     display: flex;
 }
 .email-form{
-      display: flex;
-     border: 2px solid #E7E6EF;
+    display: flex;
+    border: 2px solid #E7E6EF;
     height: 40px;
+    border: 0
 }
 
 .footer_left{
@@ -377,8 +378,8 @@ gap: 7px;
     background-color: #f2f0ff;
 }
 .hero_left img{
-    width: 500px;
-    height: 500px;
+    width: 100%;
+    height: 100%;
 }
 .hero_right{
   display: flex;
@@ -473,20 +474,107 @@ gap: 7px;
  .Categories_details:hover .img-Categories{
   box-shadow: -9px 6px 0px 0px #9071da;
 }
-.img-Categories button{
+.img-Categories a{
  position: absolute;
  bottom: 15px;
- padding: 8px 10px;
+ padding: 10px 20px;
  color: white;
  background: #08D15F;
  border: 0;
  font-family: var(--font-primary);
  display: none;
 }
- .Categories_details:hover .img-Categories button{
+ .Categories_details:hover .img-Categories a{
     display: block;
  }
 
+ /* Leatest Blog */
+ 
+ .Blog .row{
+    gap: 50px;
+   
+ }
+ .Blog_details{
+    width: calc((100% - 100px)/3);
+    box-shadow: 0px 8px 40px 0px #32208a10;
+    
+ }
+ .Blog h2{
+    color: var(--secndcolor);
+    font-size: 42px;
+    font-family: var(--font-primary);
+    margin-bottom: 30px;
+    text-align: center;
+ }
+ .img-Blog img{
+    width: 100%;
+  border-radius: 10px;
+ }
+ .Blog_info{
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    padding: 20px 20% 30px 15px;
+ }
+ .author-info{
+    display: flex;
+    gap: 40px;
+    align-items: end;
+ }
+ .author-name,.post-date{
+    display: flex;
+    gap:6px;
+ }
+ .author-name i{
+    color: var(--primarycolor);
+    font-size: 12px;
+ }
+ .author-name span{
+    color: var(--secndcolor);
+    font-family: var(--font-primary);
+    font-size: 14px;
+ }
+ .post-date span{
+   color:var(--secndcolor) ;
+   font-family: var(--font-primary);
+   font-size: 14px;
+ }
+  .post-date  i{
+    color: #FFA454;
+    font-size: 12px;
+ }
+ .Blog_info h3{
+    color: var(--secndcolor);
+    font-weight: bold;
+    font-family: var(--font-primary);
+ }
+ .Blog_info{
+    color: #72718F;
+    font-size: 18px;
+ }
+ .Blog_info a{
+    color: var(--secndcolor);
+    font-size: 16px;
+    font-weight: bold;  
+ }
+ .Blog_info a::after{
+    content: "";
+    width:21%;
+    height: 1px;
+    background-color: var(--secndcolor);
+    display: block;
+    margin-top: 3px
+ }
+ .Blog_details:hover h3,
+ .Blog_details:hover a
+ {
+    color: var(--primarycolor);
+ }
+ .Blog_details:hover .Blog_info a::after {
+    background-color: var(--primarycolor);
+ }
+ 
+ 
 /* responsive */
 
 /*responsive design to header */
@@ -762,4 +850,18 @@ gap: 7px;
     }
   
 
+}
+
+/* Leatest Blog */
+ @media (min-width:300px) and (max-width:600px) {
+.Blog_details{
+    width: 100%;
+   
+}
+ }
+@media screen and (min-width:601px) and (max-width :1156px){
+    .Blog_details{ 
+    width: calc((100% - 50px)/2);
+    }
+  
 }
