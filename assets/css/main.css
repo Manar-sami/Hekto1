@@ -744,10 +744,41 @@ background-color: white;
         font-size: 10px;
     }
 }
+@media screen and (min-width:1156px) and (max-width :1660px) {
+     .hero_left {
+        width: 100%;
+        text-align: center;
+     }
+.hero .row{
+       gap:20px;
+       flex-direction:column-reverse;
+    }
+ .hero_right{
+        text-align: center;
+        align-items: center;
+    }
+    .hero_left img{
+        width: 80%;
+        height: 80%;
+        
+    }
+}
 
 
 /* .Leatest_Products */
+@media screen and (min-width:1156px) and (max-width :1660px) {
 
+.sale{
+    top:12px;
+    position: absolute;
+    width: 110px;
+    left: -3px;
+}
+.icon_Leatest{
+    left: -8px;
+    bottom: 62px;
+}
+}
 @media screen and (min-width:1156px) and (max-width :1360px) {
 .Leatest_details{
    width: calc((100% - 40px) / 2);
@@ -758,14 +789,13 @@ background-color: white;
 @media screen and (min-width:601px) and (max-width :1157px){
 .Leatest_details{
    width: calc((100% - 40px) / 2);
+}
    .chair{
      height: 200px;
    
     width: 200px;
 }
 
-}
-  
 }
 @media (min-width:300px) and (max-width:600px) {
 .Leatest_details{
@@ -779,7 +809,6 @@ background-color: white;
 .sale{
     position: absolute;
     width: 80px;
-   
     left: 6%;
 }
 .Leatest_info .row{
